@@ -3,6 +3,7 @@ const cors = require("cors")
 const bodyParser = require('body-parser');
 const app = express();
 app.use(cors());
+const mongoose = require('mongoose');
 const port = 8000;
 
 app.get("/", (req, res) => {
